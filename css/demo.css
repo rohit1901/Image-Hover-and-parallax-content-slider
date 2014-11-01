@@ -49,7 +49,8 @@ section, header{
 /* General Demo Style */
 body{
 	font-family: Cambria, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
-	background: #e0e3ec url(../images/bg.png) repeat top left;
+	background: #2f3238;
+	/*background: #e0e3ec url(../images/bg.png) repeat top left;*/
 	font-weight: 400;
 	font-size: 15px;
 	color: #593741;

@@ -344,6 +344,10 @@ svg:not(:root) {
 
 figure {
     margin: 0;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
 }
 
 
@@ -502,9 +506,7 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
-
 /* Addition */
-/* apply a natural box layout model to all elements */
-/* By Paul Irish: http://paulirish.com/2012/box-sizing-border-box-ftw/ */
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+/* Apply a natural box layout model to all elements */
+/* Read this post by Paul Irish: http://paulirish.com/2012/box-sizing-border-box-ftw/ */
+ * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }

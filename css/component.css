@@ -88,12 +88,13 @@ button.trigger {
 	display: block;
 	margin-left: -0.5em;
 	padding: 0;
-	width: 1em;
+	width: 2em;
 	height: 1em;
 	border: none;
 	background: transparent;
 	color: transparent;
-	font-size: 2em;
+	font-size: 2.5em;
+	font-weight: 500;
 	cursor: pointer;
 }
 

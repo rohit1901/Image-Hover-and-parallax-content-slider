@@ -1,0 +1,135 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,800|Lora:400italic|Playfair+Display:700);
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'codropsicons';
+	src:url('../fonts/codropsicons/codropsicons.eot');
+	src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+}
+
+/* General Demo Style */
+html { height: 100%; }
+
+body {
+	font-family: 'Raleway', 'Open Sans', sans-serif;
+	background: #fff;
+	font-weight: 400;
+	font-size: 15px;
+	color: #333;
+	-webkit-font-smoothing: antialiased;
+	overflow: hidden;
+}
+
+a {
+	color: #555;
+	text-decoration: none;
+}
+
+/* To Navigation Style */
+.codrops-top {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: 0.8em;
+	padding: 0 32px;
+	letter-spacing: 1px;
+	z-index: 10000;
+}
+
+.codrops-top a {
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	-webkit-transform: translateY(20px);
+	transform: translateY(20px);
+}
+
+.codrops-top span.right {
+	float: right;
+}
+
+.codrops-top span.right a {
+	display: block;
+	float: left;
+}
+
+.codrops-icon:before {
+	text-transform: none;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-family: 'codropsicons';
+	text-align: center;
+	speak: none;
+	margin: 0 0.55em 0 0;
+	-webkit-font-smoothing: antialiased;
+}
+
+.codrops-icon-drop:before {
+	content: "\e001";
+}
+
+.codrops-icon-prev:before {
+	content: "\e004";
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+
+.codrops-top:before,
+.codrops-top:after {
+    content: " "; 
+    display: table; 
+}
+
+.codrops-top:after {
+    clear: both
+}
+
+.codrops-top a{
+	padding: 0px 10px;
+	letter-spacing: 1px;
+	color: #b0d2cf;
+	display: inline-block;
+}
+
+.codrops-top a:hover {
+	color: #8bb3b4;
+}
+
+.codrops-top span.right {
+	float: right;
+}
+
+.codrops-top span.right a {
+	float: left;
+	display: block;
+}
+
+
+.support-note span{
+	color: #ac375d;
+	font-size: 16px;
+	display: none;
+	font-weight: normal;
+	text-align: center;
+	padding: 5px 0;
+}
+
+.no-cssanimations .support-note span.no-cssanimations,
+.no-csstransforms .support-note span.no-csstransforms,
+.no-csstransforms3d .support-note span.no-csstransforms3d,
+.no-csstransitions .support-note span.no-csstransitions{
+	display: block;
+}
+
+@media screen and (max-width: 860px) {
+	.codrops-top {
+		display: none;
+	}
+}

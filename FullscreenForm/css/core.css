@@ -1,0 +1,12 @@
+#af-form 
+{
+	width: 500px;
+}
+
+#af-form label.error, #af-form input.submit {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 10px;
+	text-align: right;
+	margin-left: 253px;
+	color:#C71E13;
+}

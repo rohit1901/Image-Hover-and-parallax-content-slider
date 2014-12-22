@@ -1,4 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,800|Lora:400italic|Playfair+Display:700);
+/* General Blueprint Style */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 @font-face {
 	font-weight: normal;
 	font-style: normal;
@@ -10,24 +11,74 @@
 		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
 }
 
-/* General Demo Style */
-html { height: 100%; }
+
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body, html { font-size: 100%; padding: 0; margin: 0;}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
 
 body {
-	font-family: 'Raleway', 'Open Sans', sans-serif;
-	background: #fff;
-	font-weight: 400;
-	font-size: 15px;
-	color: #333;
-	-webkit-font-smoothing: antialiased;
-	overflow: hidden;
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #fff;
+    background: #47a3da;
 }
 
 a {
-	color: #555;
+	color: #f0f0f0;
 	text-decoration: none;
 }
 
+a:hover {
+	color: #000;
+}
+
+.container > header{
+	margin: 10px;
+	padding: 20px 10px 10px 10px;
+	position: relative;
+	display: block;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0);
+    text-align: center;
+}
+.container > header > span{
+	font-size: 20px;
+	line-height: 20px;
+	display: block;
+	font-weight: 400;
+	font-style: italic;
+	color: #719dab;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+}
+.container > header h1{
+	font-size: 5em;
+	line-height: 1;
+	margin: 0;
+	position: relative;
+	font-weight: 500;
+	color: #fff;
+	padding: 5px 0px;
+	text-shadow: 1px 1px 1px rgba(255,255,255,255);
+}
+.container > header h1 span{
+	font-weight: 700;
+}
+.container > header h2{
+	font-size: 14px;
+	font-weight: 300;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 15px 0 5px 0;
+	color: #6190ca;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.7);
+}
+.container > header p{
+	font-style: italic;
+	color: #aaa;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.7);
+}
 /* To Navigation Style */
 .codrops-top {
 	width: 100%;
@@ -111,25 +162,23 @@ a {
 	display: block;
 }
 
+@media screen and (max-width: 55em) {
 
-.support-note span{
-	color: #ac375d;
-	font-size: 16px;
-	display: none;
-	font-weight: normal;
-	text-align: center;
-	padding: 5px 0;
-}
+	.container > header h1,
+	.container > header nav {
+		float: none;
+	}
 
-.no-cssanimations .support-note span.no-cssanimations,
-.no-csstransforms .support-note span.no-csstransforms,
-.no-csstransforms3d .support-note span.no-csstransforms3d,
-.no-csstransitions .support-note span.no-csstransitions{
-	display: block;
-}
+	.container > header > span,
+	.container > header h1 {
+		text-align: center;
+	}
 
-@media screen and (max-width: 860px) {
-	.codrops-top {
-		display: none;
+	.container > header nav {
+		margin: 0 auto;
+	}
+
+	.container > header > span {
+		text-indent: 30px;
 	}
 }

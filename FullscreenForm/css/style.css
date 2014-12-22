@@ -1,3 +1,21 @@
+.contact-right{
+    position: absolute;
+	top: 60px;
+	right: 30px;
+    margin: 0 auto 30px auto;
+    padding: 3px 0px;
+    box-shadow: 1px 2px 4px rgba(0,0,0,0.2);
+	background: #fff;
+    max-width: 200px;
+	min-width: 100px;  
+}
+.contact-right h3 {
+	margin: 0px;
+	color: #444;
+	padding: 5px 0px;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.7);
+    text-transform: none;
+}
 .af-wrapper {
 	width: 94%;
 	max-width: 700px;
@@ -120,6 +138,7 @@
 .af-form input[type=text],
 .af-form input[type=email],
 .af-form input[type=date],
+.af-form input[type=number],
 .af-form textarea {
 	
 	border: 1px solid #ddd;

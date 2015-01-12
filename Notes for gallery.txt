@@ -1,0 +1,3 @@
+Project structure
+Responsive Image Gallery
+and full Screen overlay styles -->  Syle 1
